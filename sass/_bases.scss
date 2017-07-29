@@ -1,6 +1,7 @@
 *{
 	margin:0;
 	padding:0;
+	display: inline-block;
 }
 
 nav{
@@ -26,4 +27,22 @@ nav{
     text-align: center;
     margin: 20px;
 }
+
+}
+
+#contenedor{
+	img{
+		width: 15%;
+		border-radius: 15px;
+	}
+}
+
+#pinterest{
+	li{
+	display: block;
+    text-align: center;
+    padding: 16px;
+	}
+
+
 }

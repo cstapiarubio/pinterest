@@ -1,1 +1,1 @@
-#temas ul li,nav img,nav ul li{display:inline-block;text-align:center}*{margin:0;padding:0}nav img,nav ul li{margin:30px}nav img{width:6%;border-radius:50%}nav input{width:150px}#temas ul li{margin:20px}
+#temas ul li,*,nav img,nav ul li{display:inline-block}*{margin:0;padding:0}nav img,nav ul li{text-align:center;margin:30px}nav img{width:6%;border-radius:50%}nav input{width:150px}#temas ul li{text-align:center;margin:20px}#contenedor img{width:15%;border-radius:15px}#pinterest li{display:block;text-align:center;padding:16px}

@@ -40,13 +40,13 @@ nav{
 }
 
 
-#temas{
-	ul li{
-    display: inline-block;
-    text-align: center;
-    margin: 20px;
-}
-
+.boton{
+	@include button();	
+    p{
+    	z-index:1;
+    	font-weight: bold;
+    	color: black;
+    }
 }
 
 #contenedor{

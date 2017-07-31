@@ -14,7 +14,7 @@ $(document).ready(function(){
 
 	/*la img la inserto en una etiqueta IMG y copio su ruta, en este caso carpeta img/foto.jpg;
 		luego la llamo traves del id y le añado la extension jpg en este caso*/
-	$("#contenedor").append("<li id='pinterest'>"+ "<img onclick='onClick(this)' src='img/" + id + ".jpg' >" + 
+	$("#contenedor").append("<li class='pinterest'>"+ "<img src='img/" + id + ".jpg' >" + 
  '<h4>'+ el.title +'</h4>'+ '<p>'+ el.description +'</p>'+ '<p>'+ el.user +'</p>'+
 		'<p>'+ '#'+ el.hashtag +'</p>' + "<li>");		
 });

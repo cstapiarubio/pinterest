@@ -1,0 +1,11 @@
+@mixin button(){
+	background: url('/img/27.jpg');
+	width: 90px;
+	border-radius: 15px;
+	background-size:cover;
+	background-position:20% 55%;
+	filter: opacity(80%);
+	display: inline-block;
+    text-align: center;
+    margin: 10px;
+}

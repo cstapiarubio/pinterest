@@ -9,3 +9,19 @@
     text-align: center;
     margin: 10px;
 }
+
+@mixin pint{
+	h2{
+		font-weight: bold;
+		color: #6C6966;
+	}
+
+	img{
+		width: 100%;
+		border-radius: 15px;
+	}
+
+	p{
+		font-weight: bold;
+	}
+}

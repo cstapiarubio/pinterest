@@ -14,7 +14,7 @@ $(document).ready(function(){
 
 	/*la img la inserto en una etiqueta IMG y copio su ruta, en este caso carpeta img/foto.jpg;
 		luego la llamo traves del id y le añado la extension jpg en este caso*/
-	$("#contenedor").append("<li id='pinterest'>"+ "<img id='imag' src='img/" + id + ".jpg' >" + 
+	$("#contenedor").append("<li id='pinterest'>"+ "<img id='imag' onclick='onClick(this)' src='img/" + id + ".jpg' >" + 
 		'div id="myModal" class="modal">' + '<div class="modal-content">' + '<span class="close">'+
 		'&times;'+ '</span>' + '<p>' + "some text in the modal"+
 '</p>' +'</div>' +'</div>' + '<h4>'+ el.title +'</h4>'+ '<p>'+ el.description +'</p>'+ '<p>'+ el.user +'</p>'+

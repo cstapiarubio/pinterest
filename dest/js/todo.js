@@ -10274,23 +10274,24 @@ $(document).ready(function(){
 	caja.append("<li class='pinterest'>"+ img + '<h2>'+ el.title +'</h2>'+ 
 		'<p>'+ el.description +'</p>'+ '<p>'+ el.user +'</p>'+
 		'<p>'+ '<br/>' + '#'+ el.hashtag +'</p>' + "<li>");
-/*La info que está guarda en var caja la guardamos ahora en el contenedor vacío que está en html*/
-		$('#contenedor').append(caja);
+	/*La info que está guarda en var caja la guardamos ahora en el contenedor vacío que está en html*/
+	$('#contenedor').append(caja);
 
-		caja.click(function(){
-	    var cont= $('<div/>', {'class': 'modal-content'});
-		var title= $('<h4/>', {"text": el.title});
+	/*MODAL*/
+	caja.click(function(){
+		var cont= $('<div/>', {'class': 'modal-content'});
+		var title= $('<h4/>', {"text": el.title, "class":'titulo'});
 		var imgMod=$('<img/>', {'src': 'img/' + id + '.jpg', 'class': 'img-content'});
 		var user=$('<p/>', {"text": el.user});
 		var hash=$('<p/>', {"text": el.hashtag});
-		var title= $('<p/>', {"text": el.description});
-		var close = $('<i/>', {"class":'fa fa-times close'});
+		var descripcion= $('<p/>', {"text": el.description});
+		var close = $('<i/>', {"class":'fa fa-close'});
 		var iconUpload = $('<i/>', {"class":'fa fa-upload'});
 		var iconCheck = $('<i/>', {"class":'fa fa-check'});
 		var iconPtos =$('<i/>', {"class":'fa fa-ellipsis-h'});
 		var iconGuardar = $('<i/>', {"class":'fa fa-thumb-tack'});
 		var botonGuardar=$('<button/>',{"text": 'Guardar'});
-		var botonLeer=$('<button/>', {"text": 'Leerlo'});
+		var botonLeer=$('<button/>', {"text": 'Leerlo',"class":'leer'});
 		cont.append(iconUpload);
 		cont.append(iconCheck);
 		cont.append(iconPtos);
@@ -10302,17 +10303,26 @@ $(document).ready(function(){
 		cont.append(user);
 		cont.append(hash);
 		cont.append(botonLeer);
+		cont.append(descripcion);
 		$('#mod').append(cont);
 		$('#mod').show();
+		
 		close.click(function(){
-			$('.modal-content').hide();
+			$('.modal-content').remove();
+			$('#mod').hide();
+		});
+
+		$('#mod').click(function(){
+			$('.modal-content').remove();
 			$('#mod').hide();
 		})
+
+
 	})
 })
 
 });
 
-/*MODAL*/
+
 
 

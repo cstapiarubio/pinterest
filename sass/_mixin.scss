@@ -6,11 +6,11 @@
 	background-position:20% 55%;
 	filter: opacity(80%);
 	display: inline-block;
-    text-align: center;
-    margin: 10px;
+	text-align: center;
+	margin: 10px;
 }
 
-@mixin pint{
+@mixin pint(){
 	h2{
 		font-weight: bold;
 		color: #6C6966;
@@ -23,5 +23,51 @@
 
 	p{
 		font-weight: bold;
+	}
+}
+
+@mixin modal(){
+	i{
+		float: left;
+		color: #94918C;
+		margin-left: 1px;
+		width: 80px;
+	}
+
+	button{
+		float: right;
+		background-color: #F0541A;
+		border-radius: 15px;
+		width: 80px;
+	}
+
+	.leer{
+		position: relative;
+		margin-bottom:0;
+	}
+
+	.fa-close{
+		float: right;
+	}
+
+	.img-content{
+		width:40%;
+		position: relative;
+		margin-left: 15px;
+		border-radius: 15px;
+		display: block;
+	}
+
+	.titulo{
+		float: left;
+		color: black;
+		font-weight: bold;
+		display: block;
+	}
+
+	.img-content, .titulo{
+		position: relative;
+		margin-left: -300px;
+		margin-top: 50px;
 	}
 }
